@@ -12,13 +12,15 @@
 <a-scene embedded arjs="sourceType: webcam;">
   
   <a-marker type="pattern" url="pattern-hiro.patt">
-    
+   
     <a-entity 
       gltf-model="Cubone.glb"
-      scale="0.5 0.5 0.5"
-      position="0 0 0">
+      position="0 1 0"
+      scale="0.7 0.7 0.7"
+      rotation="0 180 0"
+      animation="property: rotation; to: 0 540 0; loop: true; dur: 5000">
     </a-entity>
-
+    
   </a-marker>
 
   <a-entity camera></a-entity>
