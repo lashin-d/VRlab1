@@ -11,16 +11,16 @@
 
 <a-scene embedded arjs="sourceType: webcam;">
   
-  <a-marker preset="hiro">
-
-  <a-entity 
+  <a-marker type="pattern" url="pattern-hiro.patt">
+    
+   <a-entity 
       gltf-model="Cubone.glb"
       scale="0.7 0.7 0.7"
       position="0 1 0"
       rotation="-90 180 0">
     </a-entity>
 
-</a-marker>
+  </a-marker>
 
   <a-entity camera></a-entity>
 
